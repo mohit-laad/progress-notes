@@ -1,0 +1,42 @@
+Competitive Data Dashboard IV - 23/06
+
+Allowed file formats are .xls and .xlsx as library used to parse data is XSSFWorkbook
+Excel file takes one column of listingIDs as input and after uploading the file, data is fetched from  first-party’s CompetitiveClient 
+The Udaan’s price fetched is priceInPaisa.basicPrice.onCODBasePrice
+Earlier, I was using two endpoints, they are combined into one POST request now.
+OOS appended for listings Out Of Stock = true and Sales Unit ID removed.
+Empty positions are replaced by “-” in the table and can be changed by changing the variable symbol in the render part.
+Also, data from a previous file uploaded in the same session can also be viewed if the file isn’t deleted manually.
+The endpoint made to monitor some beforehand chosen listings is changed to, where city is a query parameter and city = ALL means no city filter.
+	/pricing/competitive/listings?city=ALL POST request with body
+Currently the data is returned in the form: 
+
+[
+    {
+      "listingId": "TLFSPBJ2YYKJKC0QZZFLEVJ752J4TLQ",
+      "skuId": "HUL Bath Soap Lifebuoy  Total 10 MRP 40",
+      "shikharPrice": 36.4963503649635,
+      "jiomartPrice": 36.4,
+      "udaanPrice": null,
+      "mrp": 40,
+      "moq": null
+    },
+    {
+      "listingId": "TLFSPKN5KDBMPQTC6BG9PTMJC08JBDH",
+      "skuId": "HUL Bath Soap Lux  Rose & Vitamin E MRP 40",
+      "shikharPrice": 36.4963503649635,
+      "jiomartPrice": 36.36,
+      "udaanPrice": null,
+      "mrp": 40,
+      "moq": null
+    },
+    {
+      "listingId": "TLFDEG9WBEXZB82QQRFNRQSJ7PB42DX",
+      "skuId": "HUL Detergent Bar Active Wheel 2 in 1 Clean & Fresh  MRP 10",
+      "shikharPrice": 8.97666068222621,
+      "jiomartPrice": 8.9,
+      "udaanPrice": null,
+      "mrp": 10,
+      "moq": null
+    }
+]
