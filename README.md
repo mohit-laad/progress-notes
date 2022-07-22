@@ -1,2 +1,2 @@
 # progress-notes
-The repository contains all the work and progress done on the task allotted to me during my internship. 
+A directory for tracking progress of tasks I worked on throughout the internship.
