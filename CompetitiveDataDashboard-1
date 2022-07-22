@@ -1,0 +1,41 @@
+Competitive Data Dashboard II - 15/06
+
+Shikhar’s data is available but isn’t mapped to the listings that have Jio-mart’s data mapped.
+For now, as Shikhar’s data isn’t available, I fetched data from Jio-mart only.
+SKU listing ID is also added as a column as it made more sense to show what user is monitoring.
+As the exact requirements were not known, I wrote all code in the same Repository, which will be changed and distributed among respective files.
+The new endpoint made to monitor some beforehand chosen listings is
+	/pricing/competitive/random-listings
+Instead of choosing listings randomly, it made more sense to hard code some listings in an array and then fetch data for them only, because of what our next task would be.
+Right now, querying needs optimization, it could be made surely much faster
+Currently the data is returned in the form: 
+
+[
+    {
+      "skuId": "Britannia/Biscuits/Tiger Biscuits/Tiger Glucose//MRP 5",
+      "listingId": "TLFBI7YWC7RCFRM80NGPSP9E6K2SJJH",
+      "catalogId": "CCIMEGCYQXQPX8SCGWM4KRGQ7PVRT",
+      "currentPrice": 4.47,
+      "mrp": 5,
+      "competitor": "JIOMART"
+    },
+    {
+      "skuId": "Coca Cola/Cold Drink/Thums Up///750 ML",
+      "listingId": "TLDAJGV9858FFZXQ0LZQ87CBPHPVJYM",
+      "catalogId": "CCIECE513L6ETDBK4BSYG88EHT50X",
+      "currentPrice": 32.9,
+      "mrp": 40,
+      "competitor": "JIOMART"
+    },
+    {
+      "skuId": "Colgate Palmolive/Toothpaste/Colgate/Strong Teeth//200 GMS",
+      "listingId": "TLFTP64XWYF28B28GSFT1VDFN98BL0F",
+      "catalogId": "CCIG0S9YDS61MCEKF7EE1V5KH93E6",
+      "currentPrice": 90.91,
+      "mrp": 100,
+      "competitor": "JIOMART"
+    }
+]
+
+
+
