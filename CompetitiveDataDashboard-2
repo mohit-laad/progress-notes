@@ -1,0 +1,54 @@
+Competitive Data Dashboard III - 20/06
+
+Some data that is mapped to the same listing is there. I fetched data for both. 
+The logic of data retrieval is changed now and it’s giving data for each listing as an object and all the catalog data mapped to it in a list.
+MRP will be the same for all competitors right? If not, which MRP to pick up?
+MOQ should be of udaan right?
+Currently, the next step is to fetch udaan prices but I’m having a little problem with that.
+City’s filter is working right.
+Almost 4 seconds for 15 listings. 
+The whole code is now migrated to first-party-pricing.
+The endpoint made to monitor some beforehand chosen listings is changed to
+	/pricing/competitive/listings
+There are some doubts from my side of how to extract excel data and send it to first-party-pricing. Should it be like a POST request?
+Right now, querying needs optimization, it could be made surely much faster
+Currently the data is returned in the form: 
+
+[
+    {
+      "listingId": "TLFSPBJ2YYKJKC0QZZFLEVJ752J4TLQ",
+      "salesUnitId": "SU1N5ZXR3W5Z8MH47458H5CKRZC9",
+      "skuId": "HUL Bath Soap Lifebuoy  Total 10 MRP 40",
+      "catalogIds": [],
+      "competitor_data": [],
+      "shikharPrice": 36.4963503649635,
+      "jiomartPrice": 36.4,
+      "udaanPrice": null,
+      "mrp": 40,
+      "moq": null
+    },
+    {
+      "listingId": "TLFSPKN5KDBMPQTC6BG9PTMJC08JBDH",
+      "salesUnitId": "SU4EQ962PT7ZCDCZZMMDFMW79Z51",
+      "skuId": "HUL Bath Soap Lux  Rose & Vitamin E MRP 40",
+      "catalogIds": [], // to be removed
+      "competitor_data": [], // to be removed 
+      "shikharPrice": 36.4963503649635,
+      "jiomartPrice": 36.36,
+      "udaanPrice": null,
+      "mrp": 40,
+      "moq": null
+    },
+    {
+      "listingId": "TLFDEG9WBEXZB82QQRFNRQSJ7PB42DX",
+      "salesUnitId": "SUEN11Z83GL5DZR4J241JTDF4J47",
+      "skuId": "HUL Detergent Bar Active Wheel 2 in 1 Clean & Fresh  MRP 10",
+      "catalogIds": [],
+      "competitor_data": [],
+      "shikharPrice": 8.97666068222621,
+      "jiomartPrice": 8.9,
+      "udaanPrice": null,
+      "mrp": 10,
+      "moq": null
+    }
+]
