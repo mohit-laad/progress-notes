@@ -1,0 +1,12 @@
+Competitive Data Dashboard I - 09/06
+
+Screen 1: Requirements/Doubts
+
+  Take all listings that have correct mapping to competitor’s catalog and display it on dashboard in tabular format
+  What headers to show?
+  Will search technology be used? If yes, is it already available or new is to be made?
+  Competitors are JIO-MART and SHIKHAR
+  There might be multiple crawl data for a particular catalog, which price and MRP to take?
+  Will there be a time horizon for fetching data? 
+  What kind of filters are we expecting?
+  Will the listings be already visible on the dashboard or we should enter a filter first?
