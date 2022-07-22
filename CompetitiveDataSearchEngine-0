@@ -1,0 +1,13 @@
+Competitive Data Search Engine I - 06/07
+
+  Requirement is to build a search engine on the second screen of the Competitive Data Section on the First Party Console. 
+  We do not have any instance of elasticsearch currently.
+  The idea is to use search technology to give all the listings mapped to competitors by using value entered in the search bar. 
+  There are 13397 listingIds mapped to competitors’ catalogIds. 
+  The search bar will have(in future) some filters like vertical, city, etc beside it.
+  The Solr service used in udaan-search can be used with some slight modifications/conditions:
+  The search service doesn’t have SKU title as a field so SKU can’t be used for querying. Instead, if possible, listing titles can be used for the same purpose(?)
+  By searching with, say coca cola, search service will give all the listingIds having title or generated_title with some match score, these listingIds will be fed to find out competitiveData.
+  The API that can potentially be used:
+  
+  https://svc-hack.prod.udaan.io/search-solr8-master/solr/listings/select?fq=id%3ATLFSP0BPS23M5ZPQN9FK58Z0R2EX5Q4&q=*%3A* 
