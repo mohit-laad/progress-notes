@@ -1,0 +1,98 @@
+{
+  "schema": {
+    "fields":[
+      {
+        "title":"listingId",
+        "type":"string"
+      },
+      {
+        "title":"salesUnitId",
+        "type": "string"
+      },
+      {
+        "title":"catalogId",
+        "type": "string"
+      },
+      {
+        "title":"skuId",
+        "type": "string"
+      },
+      {
+        "title":"competitor",
+        "type": "string"
+      },
+      {
+        "title":"city",
+        "type": "string"
+      },
+      {
+        "title":"competitorCityId",
+        "type": "string"
+      },
+      {
+        "title":"currentPrice",
+        "type": "double"
+      },
+      {
+        "title":"mrp",
+        "type": "double"
+      },
+      {
+        "title":"outOfStock",
+        "type": "bool"
+      },
+      {
+        "title":"moq",
+        "type": "integer"
+      },
+      {
+        "title":"brand",
+        "type": "string"
+      },
+      {
+        "title":"competitorCategory",
+        "type": "string"
+      },
+      {
+        "title":"competitorVertical",
+        "type": "string"
+      },
+      {
+        "title":"competitorTitle",
+        "type": "string"
+      },
+      {
+        "title":"competitorBrand",
+        "type": "string"
+      },
+      {
+        "title":"active",
+        "type": "bool"
+      },
+      {
+        "title":"vertical",
+        "type": "string"
+      },
+      {
+        "title":"udaanPrice",
+        "type": "double"
+      },
+      {
+        "title":"udaanMoq",
+        "type": "Integer"
+      },
+      {
+        "title":"rankingScore",
+        "type": "double"
+      },
+      {
+        "title":"createdAt",
+        "type": "Integer"
+      },
+      {
+        "title":"lastUpdatedAt",
+        "type": "Integer"
+      }
+    ]
+  }
+}
