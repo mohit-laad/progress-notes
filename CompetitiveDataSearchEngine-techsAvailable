@@ -1,0 +1,13 @@
+Technologies that can be used for Competitive Data Search Engine
+
+- Talked to the service team and got the ways we can go about this
+- Solr service used currenlty is not much aligning with our use-case
+- It’d be better to use new instance of service
+- It’ll involve setting up everything from scratch
+- One way would be to setup everything on local machine and see if it’s all working then use Solr service at a host?
+- Also, if Solr service needs to be instantiated again, we can use elasticsearch bcz of it’s less complexity
+- elasticsearch also gives extra tools
+- Going back to first point, if competitive listings are indeed indexed in the same Solr service then, 
+  it will lead to expansion of resources of the existing service and might incur some cost
+- So again, ig cost will be incurred both ways
+
